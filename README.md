@@ -64,18 +64,18 @@ The obtained results from this part can be found at "Matlab code/simulation_data
 
 The simulation parameters used in the publication are as follows:
 
-|         | **Parameter**                         | **Value**                         |
-|---------|---------------------------------------|-----------------------------------|
-|         | Number of miners                      | 1, 10          	                  |
-|         | Transaction size                      | 5 kbits                           |
-|         | Block header size                     | 20 kbits                          |
-|         | Max. waiting time                     | 1000 seconds                      |
-|  **BC** | Queue length                          | 10 transactions                   |
-|         | P2P link capacity                     | 5 Mbps                            |
-|         | Sim. time                             | 100,000 seconds                   |
-|         | Waiting timer                         | 0.1, 1, 5, 10, 100 s              |
-|         | Packet arrivals                       | 0.1, 0.25, 0.5, 1, 2.5, 5, 1 tps  |
-|         | Mining rate                           | 0.1, 0.25, 0.5, 1, 2.5, 5, 1 Hz   |
+| **Parameter**                         | **Value**                         |
+|---------------------------------------|-----------------------------------|
+| Number of miners                      | 1, 10          	                  |
+| Transaction size                      | 5 kbits                           |
+| Block header size                     | 20 kbits                          |
+| Max. waiting time                     | 1000 seconds                      |
+| Queue length                          | 10 transactions                   |
+| P2P link capacity                     | 5 Mbps                            |
+| Sim. time                             | 100,000 seconds                   |
+| Waiting timer                         | 0.1, 1, 5, 10, 100 s              |
+| Packet arrivals                       | 0.1, 0.25, 0.5, 1, 2.5, 5, 1 tps  |
+| Mining rate                           | 0.1, 0.25, 0.5, 1, 2.5, 5, 1 Hz   |
 
 ### Simulation Results
 
@@ -84,37 +84,29 @@ In what follows, we present the results presented in the manuscript.
 First, we show the accuracy of different interpolation mechanisms, which are used to approximate the optimal block size function. In particular, we focus on linear, quadratic, and Lagrangian interpolation functions.
 
 <p align="center">
-<img src="blockchain_block_size_optimization/Matlab code/output/model_interpolation_extended.png" alt="" width="500"/>
+<img src="Matlab code/output/model_interpolation_extended.png" alt="" width="600"/>
 </p>
 
 Next, we show the transaction confirmation latency against the block size and highlight the range of validity of the optimal block size estimation.
 
 <p align="center">
-<img src="blockchain_block_size_optimization/Matlab code/output/timer_vs_no_timer.png" alt="" width="500"/>
+<img src="Matlab code/output/timer_vs_no_timer.png" alt="" width="600"/>
 </p>
 
 The validation of the queue model is done using simulations. The following figures compare the model output with simulation results, for different blockchain parameters.
 
 <p align="center">
-<img src="blockchain_block_size_optimization/Matlab code/output/validation_1.png" alt="" width="500"/>
+<img src="Matlab code/output/validation_complete_forks.png" alt="" width="600"/>
 </p>
 
 <p align="center">
-<img src="blockchain_block_size_optimization/Matlab code/output/validation_complete_forks.png" alt="" width="500"/>
-</p>
-
-<p align="center">
-<img src="blockchain_block_size_optimization/Matlab code/output/validation_complete_no_forks_legend.png" alt="" width="500"/>
-</p>
-
-<p align="center">
-<img src="blockchain_block_size_optimization/Matlab code/output/validation_complete_no_forks.png" alt="" width="500"/>
+<img src="Matlab code/output/validation_complete_no_forks_legend.png" alt="" width="600"/>
 </p>
 
 Finally, the following figure compares the performance obtained by the actual optimal block size (computed by brute force through simulations) and its model approximation.
 
 <p align="center">
-<img src="blockchain_block_size_optimization/Matlab code/output/optimal_relative_difference.png" alt="" width="500"/>
+<img src="Matlab code/output/optimal_relative_difference.png" alt="" width="600"/>
 </p>
 
 
