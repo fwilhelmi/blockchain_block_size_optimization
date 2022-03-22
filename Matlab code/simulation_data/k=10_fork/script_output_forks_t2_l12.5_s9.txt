@@ -1,0 +1,2 @@
+QUEUE SIMULATION (seed 12345) Output (sim_time=100000.000000-lambda=12.500000-mu=15.000000-waiting_timeout=2.000000-queue_size=10-batch_size=9)
+1252839;1029;0.000821;0.000024;4.089557;0.326826;0.517956
